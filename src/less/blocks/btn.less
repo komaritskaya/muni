@@ -1,0 +1,28 @@
+.btn {
+  padding: 19px;
+  font-family: @text-font;
+  color: @white-color;
+  display: block;
+  text-align: center;
+  max-width: 377px;
+  
+  &--primary {
+    background-color: @decorations-bg-color;
+  }
+  
+  &--reverse {
+    background-color: @white-color;
+    color: @decorations-text-color;
+    border: @primary-border;
+    font-family: @links-font; 
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    &--primary {
+      font-size: 1.25rem;
+      line-height: 1.465rem;
+    }
+  }
+}

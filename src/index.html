@@ -10,61 +10,184 @@
   <link rel="preload" href="fonts/subset-Roboto-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 
+  <script src="js/picturefill.min.js" async></script>
+  <script src="js/svg4everybody.min.js"></script>
 
 </head>
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo"></a>
-    </div>
-    
-    <nav class="main-nav main-nav--reverse main-nav--closed main-nav--nojs">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item main-nav__list-item--active">
-          <a>Главная</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a href="catalog.html">Каталог</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a href="#">Свадебная полиграфия</a>
-        </li>
-      </ul>
-    </nav>
-    
-    <div class="page-header__contacts contacts">
-      <a href="tel:+79992077407" class="contacts__phone">
-        8&nbsp;&nbsp;999&nbsp;&nbsp;207&nbsp;&nbsp;74&nbsp;&nbsp;07 
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo.svg" width="42" height="42" alt="MUNI лого">
       </a>
-      <a href="https://instagram.com/munidecor " class="contacts__link contacts__link--ig">
-        <span class="visually-hidden">Мы в Instagram</span>
-        <!-- <svg class="social__image social__image--vk" width="22" height="12">
-          <use xlink:href="#icon-vk"></use>
-        </svg> -->
+      
+      <nav class="main-nav main-nav--reverse main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Свадебная полиграфия</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="page-header__contacts">
+        <a href="tel:+79992077407" class="page-header__phone">
+          <span class="hide-mobile">8&nbsp;&nbsp;</span>999&nbsp;&nbsp;207&nbsp;&nbsp;74&nbsp;&nbsp;07 
+        </a>
+        <a href="https://instagram.com/munidecor " class="page-header__insta">
+          <span class="visually-hidden">MUNI в Instagram</span>
+          <svg width="12" height="12">
+            <use xlink:href="#icon-instagram"></use>
+          </svg>
+        </a>
+      </div>
+      
+      <a href="#" class="btn btn--reverse page-header__order">
+        Мой заказ
       </a>
+      
+      <button class="page-header__nav-toggle page-header__nav-toggle--closed page-header__nav-toggle--nojs" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
     </div>
-    
-    <a href="#" class="page-header__order-link">
-      Мой заказ
-    </a>
-  
-    <button class="page-header__nav-toggle page-header__nav-toggle--closed page-header__nav-toggle--nojs" type="button">
-      <span class="visually-hidden">
-        Открыть меню
-      </span>
-    </button>
   </header>
-  
+    
   <main class="page-main">
     <section class="promo">
       <div class="promo__wrapper">
-        <h1 class="promo__title">Студия декора событий MUNI</h1>
-        <p class="promo__subtitle">Декор свадьбы в&nbsp;один клик</p>
+        <h1 class="visually-hidden">Студия декора событий MUNI</h1>
+        <p class="promo__title">Декор свадьбы<br />в&nbsp;один клик</p>
         <p class="promo__description">Готовые авторские решения, разработанные лучшими флористами и&nbsp;дизайнерами</p>
-        <a href="#" class="btn">Выбрать декор</a>
+        <a href="#" class="btn btn--primary promo__btn">Выбрать декор</a>
       </div>  
     </section>
+    <section class="about">
+      <h2 class="about__title">О нас</h2>
+      <div class="about__wrapper">
+        <div class="about__content">
+          <p class="about__description">
+            MUNI&nbsp;&mdash; это декор свадьбы в&nbsp;один
+            клик.<br />
+            Мы&nbsp;предлагаем готовые концепции оформления праздника.<br />
+            Пакетные
+            предложения (сеты) состоят из&nbsp;цветочных композиций и&nbsp;деталей сервировки в&nbsp;разных стилях.<br />
+            Концепции разработаны опытными флористами и&nbsp;декораторами, которые работают в&nbsp;командах лидеров event-сферы.
+          </p>
+        </div>
+        <picture>
+          <source type="image/webp" media="(min-width:768px)" srcset="img/flowers.webp">
+          <img class="about__image hide-mobile" src="img/flowers.png" alt="Букет цветов">
+        </picture>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item contacts__item--phone">
+          <a href="tel:+79992077407" class="contacts__link contacts__link--phone">
+            <svg class="social__image contacts__image--phone" width="15" height="15">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <span>8&nbsp;&nbsp;999&nbsp;&nbsp;207&nbsp;&nbsp;74&nbsp;&nbsp;07</span>
+          </a>
+        </li>
+        <li class="contacts__item contacts__item--insta">
+          <a href="https://instagram.com/munidecor" class="contacts__link contacts__link--insta">
+            <svg class="contacts__image contacts__image--insta" width="15" height="15">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+            <span>@munidecor</span>
+          </a>
+        </li>
+        <li class="contacts__item contacts__item--email">
+          <a href="mailto:muni.decor@gmail.com" class="contacts__link contacts__link--email">
+            <svg class="contacts__image contacts__image--email" width="15" height="10">
+              <use xlink:href="#icon-email"></use>
+            </svg>
+            <span>muni.decor@gmail.com</span>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__links">      
+        <a class="page-footer__logo">
+          <img class="page-header__logo-image" src="img/logo.svg" width="42" height="42" alt="MUNI лого">
+        </a>
+        <nav class="page-footer__nav main-nav main-nav--reverse main-nav--closed main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item main-nav__list-item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#">Свадебная полиграфия</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-footer__copyright hide-mobile">&copy;&nbsp;2020</div>    
+      </div>
+      <div class="page-footer__contacts">
+        <div class="page-footer__contacts-first">
+          <a href="tel:+79992077407" class="page-footer__phone">
+            8&nbsp;&nbsp;999&nbsp;&nbsp;207&nbsp;&nbsp;74&nbsp;&nbsp;07 
+          </a>
+          <a href="https://instagram.com/munidecor " class="page-footer__link page-footer__insta">
+            <span class="visually-hidden">MUNI в Instagram</span>
+            <svg class="page-footer__image page-footer__image--insta" width="12" height="12">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__email">
+          <a href="mailto:muni.decor@gmail.com" class="social__link social__link--email">
+            <svg class="contacts__image contacts__image--fb" width="10" height="19">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+            <span>muni.decor@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+  
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.page-header__nav-toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.classList.remove('page-header__nav-toggle--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+        navToggle.classList.remove('page-header__nav-toggle--closed');
+        navToggle.classList.add('page-header__nav-toggle--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+        navToggle.classList.add('page-header__nav-toggle--closed');
+        navToggle.classList.remove('page-header__nav-toggle--opened');
+      }
+    });
+  </script>
   
 </body>
 </html>

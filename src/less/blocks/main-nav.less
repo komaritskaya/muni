@@ -1,0 +1,36 @@
+.main-nav {
+  font-family: @links-font; 
+  color: @grey-text-color;
+  
+  &--closed {
+    display: none;
+  }
+}
+
+.main-nav__list-item {
+  font-size: 0.75rem;
+  line-height: 0.91rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-nav__list-item > a {
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+// .main-nav__list-item--active > a {
+//   border-bottom: 2px solid @content-main-color;
+// }
+
+.main-nav--nojs {
+  display: block;
+}
