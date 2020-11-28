@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>MUNI - студия декора событий</title>
+  <link rel="preload" href="fonts/subset-Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/subset-Cormorant-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/subset-Roboto-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <script src="js/picturefill.min.js" async=""></script>
+  <script src="js/svg4everybody.min.js"></script>
+
+</head>
+<body>
+  <div style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 16 16">
+<path d="M8 0C3.58892 0 0 3.58862 0 8C0 12.4114 3.58892 16 8 16C12.4111 16 16 12.4114 16 8C16 3.58862 12.4111 0 8 0ZM8 15.3846C3.92831 15.3846 0.615385 12.0717 0.615385 8C0.615385 3.92831 3.92831 0.615385 8 0.615385C12.0717 0.615385 15.3846 3.92831 15.3846 8C15.3846 12.0717 12.0717 15.3846 8 15.3846Z" fill="#464343"></path>
+<path d="M10.9867 5.01308C10.8664 4.89277 10.672 4.89277 10.5517 5.01308L7.99998 7.56478L5.44829 5.01308C5.32798 4.89277 5.13352 4.89277 5.01321 5.01308C4.8929 5.13339 4.8929 5.32785 5.01321 5.44816L7.5649 7.99985L5.01321 10.5515C4.8929 10.6719 4.8929 10.8663 5.01321 10.9866C5.07321 11.0466 5.15198 11.0768 5.23075 11.0768C5.30952 11.0768 5.38829 11.0466 5.44829 10.9866L7.99998 8.43493L10.5517 10.9866C10.6117 11.0466 10.6904 11.0768 10.7692 11.0768C10.848 11.0768 10.9267 11.0466 10.9867 10.9866C11.1071 10.8663 11.1071 10.6719 10.9867 10.5515L8.43506 7.99985L10.9867 5.44816C11.1071 5.32785 11.1071 5.13339 10.9867 5.01308Z" fill="#464343"></path>
+</symbol><symbol id="icon-email" viewBox="0 0 43 30">
+<path d="M40.85 0H2.15001C0.962582 0 9.39748e-06 0.950529 9.39748e-06 2.1231V27.6003C-0.00133435 28.0464 0.141461 28.4813 0.407793 28.8416C0.811455 29.3948 1.45959 29.7228 2.15001 29.7234H40.85C41.5394 29.7229 42.1868 29.3961 42.5908 28.8444C42.8577 28.4832 43.0012 28.0475 43 27.6003V2.1231C43 0.950529 42.0374 0 40.85 0ZM1.43334 27.1948V4.65383L16.2074 15.9232L1.43334 27.1948ZM2.31843 28.308L17.3792 16.8178L20.1864 18.9579C20.9603 19.5477 22.0397 19.5477 22.8137 18.9579L25.6208 16.8178L40.6816 28.308H2.31843ZM41.5667 27.1948L26.7926 15.9232L41.5667 4.65383V27.1948ZM41.5667 2.86548L21.9379 17.8376C21.6799 18.0342 21.3201 18.0342 21.0621 17.8376L1.43334 2.86548V2.1231C1.43334 1.73227 1.75423 1.4154 2.15001 1.4154H40.85C41.2458 1.4154 41.5667 1.73227 41.5667 2.1231V2.86548Z" fill="#494948"></path>
+</symbol><symbol id="icon-instagram" viewBox="0 0 20 20">
+<path d="M14.5862 0H5.41381C2.42858 0 0 2.42858 0 5.41381V14.5863C0 17.5714 2.42858 20 5.41381 20H14.5863C17.5714 20 20 17.5714 20 14.5863V5.41381C20 2.42858 17.5714 0 14.5862 0V0ZM18.8275 14.5863C18.8275 16.9249 16.9249 18.8275 14.5862 18.8275H5.41381C3.0751 18.8275 1.17248 16.9249 1.17248 14.5863V5.41381C1.17248 3.0751 3.0751 1.17248 5.41381 1.17248H14.5863C16.9249 1.17248 18.8275 3.0751 18.8275 5.41381V14.5863Z" fill="#494948"></path>
+<path d="M10.0001 4.53137C6.98465 4.53137 4.53149 6.98452 4.53149 9.99996C4.53149 13.0154 6.98465 15.4685 10.0001 15.4685C13.0155 15.4685 15.4687 13.0154 15.4687 9.99996C15.4687 6.98452 13.0155 4.53137 10.0001 4.53137ZM10.0001 14.2961C7.63131 14.2961 5.70398 12.3689 5.70398 9.99996C5.70398 7.63119 7.63131 5.70386 10.0001 5.70386C12.369 5.70386 14.2962 7.63119 14.2962 9.99996C14.2962 12.3689 12.369 14.2961 10.0001 14.2961Z" fill="#494948"></path>
+<path d="M15.5993 2.58923C14.7082 2.58923 13.9834 3.31418 13.9834 4.20514C13.9834 5.09625 14.7082 5.82119 15.5993 5.82119C16.4904 5.82119 17.2154 5.09625 17.2154 4.20514C17.2154 3.31402 16.4904 2.58923 15.5993 2.58923ZM15.5993 4.64856C15.3549 4.64856 15.1559 4.44958 15.1559 4.20514C15.1559 3.96054 15.3549 3.76172 15.5993 3.76172C15.8439 3.76172 16.0429 3.96054 16.0429 4.20514C16.0429 4.44958 15.8439 4.64856 15.5993 4.64856Z" fill="#494948"></path>
+</symbol><symbol id="icon-mobile-menu" viewBox="0 0 18 11">
+<line y1="0.5" x2="17.8571" y2="0.5" stroke="#464343"></line>
+<line y1="10.5" x2="17.8571" y2="10.5" stroke="#464343"></line>
+<line y1="5.5" x2="17.8571" y2="5.5" stroke="#464343"></line>
+</symbol><symbol id="icon-phone" viewBox="0 0 42 41">
+<path d="M39.927 31.3385L31.6278 25.855C30.5746 25.1647 29.1629 25.3918 28.3843 26.3769L25.9668 29.4565C25.6561 29.8624 25.0914 29.9801 24.642 29.7327L24.1821 29.4816C22.6577 28.6583 20.7609 27.6334 16.9394 23.8457C13.1178 20.058 12.0812 18.1773 11.2503 16.6697L10.9982 16.2141C10.7451 15.7689 10.8617 15.207 11.2715 14.8967L14.3776 12.5022C15.3715 11.7307 15.601 10.3324 14.9051 9.28857L9.37055 1.06593C8.65735 0.00301939 7.22647 -0.316061 6.12235 0.341537L2.65196 2.40699C1.56154 3.04214 0.761539 4.07078 0.419712 5.27737C-0.829971 9.78877 0.110153 17.5748 11.6863 29.0456C20.8949 38.1686 27.7503 40.622 32.4622 40.622C33.5466 40.6266 34.6268 40.4868 35.6736 40.2063C36.8917 39.868 37.9301 39.0753 38.5707 37.9947L40.6575 34.5583C41.3221 33.4641 41.0003 32.0456 39.927 31.3385ZM39.4801 33.8637L37.3981 37.3021C36.9381 38.0821 36.1913 38.6556 35.3141 38.9025C31.1106 40.0459 23.7667 39.0988 12.6531 28.0877C1.53952 17.0765 0.583699 9.80099 1.73778 5.63556C1.98728 4.76543 2.56684 4.02453 3.35507 3.56805L6.82547 1.50529C7.30454 1.21968 7.92558 1.35812 8.23505 1.81937L11.2415 6.2915L13.7649 10.0413C14.0671 10.4941 13.9678 11.1009 13.5367 11.4359L10.4298 13.8304C9.48433 14.5467 9.21433 15.8427 9.79646 16.8714L10.0432 17.3155C10.9164 18.9023 12.0021 20.8764 15.9658 24.8029C19.9296 28.7294 21.9214 29.8052 23.5222 30.6703L23.9711 30.9154C25.0092 31.4921 26.3175 31.2246 27.0404 30.2878L29.4572 27.2096C29.7954 26.7827 30.4076 26.6844 30.8647 26.9835L39.1632 32.4671C39.629 32.7735 39.7687 33.3891 39.4801 33.8637Z" fill="#494948"></path>
+<path d="M23.2337 6.77139C29.6459 6.77845 34.8423 11.927 34.8495 18.2801C34.8495 18.654 35.1553 18.957 35.5327 18.957C35.9101 18.957 36.216 18.654 36.216 18.2801C36.208 11.1795 30.4003 5.42526 23.2337 5.41748C22.8563 5.41748 22.5504 5.72054 22.5504 6.09443C22.5504 6.46833 22.8563 6.77139 23.2337 6.77139Z" fill="#494948"></path>
+<path d="M23.2337 10.8337C27.3827 10.8385 30.7449 14.1698 30.7498 18.2806C30.7498 18.6545 31.0557 18.9575 31.433 18.9575C31.8104 18.9575 32.1163 18.6545 32.1163 18.2806C32.1106 13.4223 28.137 9.48529 23.2337 9.47974C22.8563 9.47974 22.5504 9.78279 22.5504 10.1567C22.5504 10.5306 22.8563 10.8337 23.2337 10.8337Z" fill="#494948"></path>
+<path d="M23.2337 14.8954C25.1195 14.8976 26.6478 16.4118 26.6501 18.2803C26.6501 18.6542 26.956 18.9573 27.3333 18.9573C27.7106 18.9573 28.0166 18.6542 28.0166 18.2803C28.0136 15.6644 25.874 13.5444 23.2337 13.5415C22.8563 13.5415 22.5504 13.8446 22.5504 14.2185C22.5504 14.5924 22.8563 14.8954 23.2337 14.8954Z" fill="#494948"></path>
+</symbol></svg>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo.svg" width="42" height="42" alt="MUNI лого">
+      </a>
+      
+      <nav class="main-nav main-nav--reverse main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Свадебная полиграфия</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="page-header__contacts">
+        <a href="tel:+79992077407" class="page-header__phone">
+          <span class="hide-mobile">8&nbsp;&nbsp;</span>999&nbsp;&nbsp;207&nbsp;&nbsp;74&nbsp;&nbsp;07 
+        </a>
+        <a href="https://instagram.com/munidecor " class="page-header__insta">
+          <span class="visually-hidden">MUNI в Instagram</span>
+          <svg width="12" height="12">
+            <use xlink:href="#icon-instagram"></use>
+          </svg>
+        </a>
+      </div>
+      
+      <a href="#" class="btn btn--reverse page-header__order">
+        Мой заказ
+      </a>
+      
+      <button class="page-header__nav-toggle page-header__nav-toggle--closed page-header__nav-toggle--nojs" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+    </div>
+  </header>
+    
+  <main class="page-main">
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h1 class="visually-hidden">Студия декора событий MUNI</h1>
+        <p class="promo__title">Декор свадьбы<br>в&nbsp;один клик</p>
+        <p class="promo__description">Готовые авторские решения, разработанные лучшими флористами и&nbsp;дизайнерами</p>
+        <a href="#" class="btn btn--primary promo__btn">Выбрать декор</a>
+      </div>  
+    </section>
+    <section class="about">
+      <h2 class="about__title">О нас</h2>
+      <div class="about__wrapper">
+        <div class="about__content">
+          <p class="about__description">
+            MUNI&nbsp;&mdash; это декор свадьбы в&nbsp;один
+            клик.<br>
+            Мы&nbsp;предлагаем готовые концепции оформления праздника.<br>
+            Пакетные
+            предложения (сеты) состоят из&nbsp;цветочных композиций и&nbsp;деталей сервировки в&nbsp;разных стилях.<br>
+            Концепции разработаны опытными флористами и&nbsp;декораторами, которые работают в&nbsp;командах лидеров event-сферы.
+          </p>
+        </div>
+        <picture>
+          <source type="image/webp" media="(min-width:768px)" srcset="img/flowers.webp">
+          <img class="about__image hide-mobile" src="img/flowers.png" alt="Букет цветов">
+        </picture>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item contacts__item--phone">
+          <a href="tel:+79992077407" class="contacts__link contacts__link--phone">
+            <svg class="social__image contacts__image--phone" width="15" height="15">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <span>8&nbsp;&nbsp;999&nbsp;&nbsp;207&nbsp;&nbsp;74&nbsp;&nbsp;07</span>
+          </a>
+        </li>
+        <li class="contacts__item contacts__item--insta">
+          <a href="https://instagram.com/munidecor" class="contacts__link contacts__link--insta">
+            <svg class="contacts__image contacts__image--insta" width="15" height="15">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+            <span>@munidecor</span>
+          </a>
+        </li>
+        <li class="contacts__item contacts__item--email">
+          <a href="mailto:muni.decor@gmail.com" class="contacts__link contacts__link--email">
+            <svg class="contacts__image contacts__image--email" width="15" height="10">
+              <use xlink:href="#icon-email"></use>
+            </svg>
+            <span>muni.decor@gmail.com</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__links">      
+        <a class="page-footer__logo">
+          <img class="page-header__logo-image" src="img/logo.svg" width="42" height="42" alt="MUNI лого">
+        </a>
+        <nav class="page-footer__nav main-nav main-nav--reverse main-nav--closed main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item main-nav__list-item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#">Свадебная полиграфия</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-footer__copyright hide-mobile">&copy;&nbsp;2020</div>    
+      </div>
+      <div class="page-footer__contacts">
+        <div class="page-footer__contacts-first">
+          <a href="tel:+79992077407" class="page-footer__phone">
+            8&nbsp;&nbsp;999&nbsp;&nbsp;207&nbsp;&nbsp;74&nbsp;&nbsp;07 
+          </a>
+          <a href="https://instagram.com/munidecor " class="page-footer__link page-footer__insta">
+            <span class="visually-hidden">MUNI в Instagram</span>
+            <svg class="page-footer__image page-footer__image--insta" width="12" height="12">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__email">
+          <a href="mailto:muni.decor@gmail.com" class="social__link social__link--email">
+            <svg class="contacts__image contacts__image--fb" width="10" height="19">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+            <span>muni.decor@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+  
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.page-header__nav-toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.classList.remove('page-header__nav-toggle--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+        navToggle.classList.remove('page-header__nav-toggle--closed');
+        navToggle.classList.add('page-header__nav-toggle--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+        navToggle.classList.add('page-header__nav-toggle--closed');
+        navToggle.classList.remove('page-header__nav-toggle--opened');
+      }
+    });
+  </script>
+  
+</body>
+</html>
