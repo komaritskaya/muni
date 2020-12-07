@@ -2,17 +2,25 @@
   .wrapper();
   
   padding-top: 4px;
-  padding-bottom: 2px;
+  padding-bottom: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
+.page-header__logo {
+  margin-left: -5px;
+  height: 42px;
+}
+
 .page-header__contacts {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  width: 43%;
 }
 
 .page-header__phone {
@@ -23,13 +31,17 @@
 }
 
 .page-header__insta {
-  margin: 0 10px;
+  margin: 0 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-header__order {
   font-size: 0.75rem;
   line-height: 0.91rem;
-  padding: 5px 8px;
+  padding: 2px 9px;
 }
 
 .page-header__nav-toggle {

@@ -1,7 +1,10 @@
-
+.about {
+  background-color: @bg-main-color;
+  padding-top: 0;
+}
 
 .about__title {
-  .wrapper();
+  background-color: @white-color;
   font-family: @titles-font;
   font-size: 1.875rem;
   line-height: 2.27rem;
@@ -11,14 +14,10 @@
   padding-bottom: 31px;
 }
 
-.about__content {
-  background-color: @bg-main-color;
-  padding-top: 41px;
-  padding-bottom: 42px;
-}
-
 .about__description {
   .wrapper();
+  padding-top: 41px;
+  padding-bottom: 42px;
   font-family: @text-font;
   color: @grey-text-color;
   font-size: 0.75rem;
@@ -30,15 +29,23 @@
 }
 
 @media (min-width: @tablet-width) {
-  .about__title, .about__description {
+  .about {
+    background-color: @white-color;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+  
+  .about__description {
     .wrapper-reset();
   }
   
   .about__title {
-    font-size: 4.375rem;
-    line-height: 5.30rem;
-    padding-top: 100px;
-    padding-bottom: 0;
+    font-size: 3.125rem;
+    line-height: 3.25rem;
+    padding-top: 0;
+    padding-bottom: 53px;
     position: relative;
     
     &::before {
@@ -48,12 +55,67 @@
       border-top: 5px solid @line-top-color;
       border-bottom: 5px solid @line-bottom-color;
       position: absolute;
-      top: 145px;
+      top: 10px;
       left: 0;
       right: calc(50% + 145px);
       margin: 0 auto;
       z-index: -1;
     }
+  }
+  
+  .about__wrapper {
+    .wrapper();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .about__content {
+    background-color: @white-color;
+  }
+  
+  .about__description {
+    background-color: @bg-main-color;
+    padding: 50px 40px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: @links-font;
+  }
+  
+  .about__image {
+    margin-right: -50px;
+    margin-top: 1.25rem;
+    width: 316px;
+    height: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__title, .about__description {
+    .wrapper-reset();
+  }
+  
+  .about__title {
+    font-size: 4.375rem;
+    line-height: 5.30rem;
+    // padding-top: 100px;
+    // padding-bottom: 0;
+    // position: relative;
+    
+    // &::before {
+    //   content: "";
+    //   height: 20px;
+    //   display: block;
+    //   border-top: 5px solid @line-top-color;
+    //   border-bottom: 5px solid @line-bottom-color;
+    //   position: absolute;
+    //   top: 145px;
+    //   left: 0;
+    //   right: calc(50% + 145px);
+    //   margin: 0 auto;
+    //   z-index: -1;
+    // }
   }
   
   .about__wrapper {
