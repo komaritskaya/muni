@@ -60,26 +60,90 @@
     
   <main class="page-main">
     <div class="catalog__wrapper">
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs hide-mobile">
         <li class="breadcrumbs__item">Главная</li>
         <li class="breadcrumbs__item">Каталог</li>
       </ul>
       
       <h1 class="catalog__title">Каталог</h1>
       <div class="catalog__options">
-        <label for="styles">
-          <input type="radio" name="catalog-options" id="styles" class="catalog__options-item">
-        </label>
-        <label for="positions">
-          <input type="radio" name="catalog-options" id="positions" class="catalog__options-item">
-        </label>
+        <a class="catalog__option catalog__option--active">Стили</a>
+        <a href="./positions.html" class="catalog__option">Позиции</a>
       </div>
       
       <section class="catalog__styles styles">
         <ul class="styles__list">
           <li class="styles__item style-card">
-            <img src="#" alt="Нежность в деталях" class="style-card__img">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/style-01-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/style-01-tablet.webp">
+              <img class="style-card__img" src="img/style-01.png" alt="Нежность в деталях">
+            </picture>
             <h2 class="style-card__title">Нежность в деталях</h2>
+          </li>
+          <li class="styles__item style-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/style-02-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/style-02-tablet.webp">
+              <img class="style-card__img" src="img/style-02.png" alt="Роскошь красок">
+            </picture>
+            <h2 class="style-card__title">Роскошь красок</h2>
+          </li>
+          <li class="styles__item style-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/style-03-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/style-03-tablet.webp">
+              <img class="style-card__img" src="img/style-03.png" alt="Лиловая классика">
+            </picture>
+            <h2 class="style-card__title">Лиловая классика</h2>
+          </li>
+          <li class="styles__item style-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/style-04-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/style-04-tablet.webp">
+              <img class="style-card__img" src="img/style-04.png" alt="Свадебная вечеринка">
+            </picture>
+            <h2 class="style-card__title">Свадебная вечеринка</h2>
+          </li>
+          <li class="styles__item style-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/style-05-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/style-05-tablet.webp">
+              <img class="style-card__img" src="img/style-05.png" alt="Припыленный монохром">
+            </picture>
+            <h2 class="style-card__title">Припыленный монохром</h2>
+          </li>
+          <li class="styles__item style-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/style-06-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/style-06-tablet.webp">
+              <img class="style-card__img" src="img/style-06.png" alt="Моно из роз">
+            </picture>
+            <h2 class="style-card__title">Моно из роз</h2>
+          </li>
+          <li class="styles__item style-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/style-07-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/style-07-tablet.webp">
+              <img class="style-card__img" src="img/style-07.png" alt="Современная классика">
+            </picture>
+            <h2 class="style-card__title">Современная классика</h2>
+          </li>
+          <li class="styles__item style-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/style-08-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/style-08-tablet.webp">
+              <img class="style-card__img" src="img/style-08.png" alt="Лаконичный акцент">
+            </picture>
+            <h2 class="style-card__title">Лаконичный акцент</h2>
+          </li>
+          <li class="styles__item style-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/style-09-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/style-09-tablet.webp">
+              <img class="style-card__img" src="img/style-09.png" alt="Воздушная нежность">
+            </picture>
+            <h2 class="style-card__title">Воздушная нежность</h2>
           </li>
         </ul>
       </section>

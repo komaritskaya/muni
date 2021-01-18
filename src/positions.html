@@ -67,12 +67,8 @@
       
       <h1 class="catalog__title">Каталог</h1>
       <div class="catalog__options">
-        <label for="styles">
-          <input type="radio" name="catalog-options" id="styles" class="catalog__options-item">
-        </label>
-        <label for="positions">
-          <input type="radio" name="catalog-options" id="positions" class="catalog__options-item">
-        </label>
+        <a href="./positions.html" class="catalog__option">Стили</a>
+        <a class="catalog__option catalog__option--active">Позиции</a>
       </div>
       
       <section class="catalog__positions positions">
@@ -92,7 +88,11 @@
         </div>
         <ul class="positions__list">
           <li class="positions__item position-card">
-            <img src="#" alt="Базовый комплект нежность в деталях" class="position-card__img">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/basic-style-01-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/basic-style-01-tablet.webp">
+              <img class="position-card__img" src="img/basic-style-01.png" alt="Базовый комплект нежность в деталях">
+            </picture>
             <div class="position-card__content">
               <h2 class="position-card__title">Базовый комплект<br />"Нежность в деталях"</h2>
               <p class="position-card__description">Цветочная композиция в&nbsp;вазе, тонкие свечи и&nbsp;подсвечники 4&nbsp;шт., пудровая скатерть для круглого стола</p>
@@ -103,6 +103,535 @@
             </div>
             <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
           </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/basic-style-02-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/basic-style-02-tablet.webp">
+              <img class="position-card__img" src="img/basic-style-02.png" alt="Базовый комплект роскошь красок">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Базовый комплект<br />"Роскошь красок"</h2>
+              <p class="position-card__description">Цветочная композиция в&nbsp;вазе, тонкие свечи и&nbsp;подсвечники 4&nbsp;шт., бежевая скатерть для круглого стола</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">5&nbsp;800&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/basic-style-03-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/basic-style-03-tablet.webp">
+              <img class="position-card__img" src="img/basic-style-03.png" alt="Базовый комплект лиловая классика">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Базовый комплект<br />"Лиловая классика"</h2>
+              <p class="position-card__description">Цветочная композиция в&nbsp;канделябре, свечи и&nbsp;подсвечники 4&nbsp;шт., серая скатерть для круглого стола</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">5&nbsp;800&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/basic-style-04-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/basic-style-04-tablet.webp">
+              <img class="position-card__img" src="img/basic-style-04.png" alt="Базовый комплект свадебная вечеринка">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Базовый комплект<br />"Свадебная вечеринка"</h2>
+              <p class="position-card__description">Две цветочные композиции в&nbsp;клоше и&nbsp;две в&nbsp;мини вазах, свечи и&nbsp;подсвечники 4&nbsp;шт., серая скатерть для круглого стола</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">4&nbsp;300&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/basic-style-05-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/basic-style-05-tablet.webp">
+              <img class="position-card__img" src="img/basic-style-05.png" alt="Базовый комплект припыленный монохром">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Базовый комплект<br />"Припыленный монохром"</h2>
+              <p class="position-card__description">Цветочная композиция в&nbsp;вазоне, тонкие свечи и&nbsp;подсвечники 4&nbsp;шт., серая скатерть для круглого стола</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">5&nbsp;800&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/basic-style-06-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/basic-style-06-tablet.webp">
+              <img class="position-card__img" src="img/basic-style-06.png" alt="Базовый комплект моно из роз">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Базовый комплект<br />"Моно из роз"</h2>
+              <p class="position-card__description">Три цветочные композиции в&nbsp;прозрачных вазах, тонкие свечи и&nbsp;подсвечники 4&nbsp;шт., бежевая скатерть для круглого стола</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">4&nbsp;250&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/basic-style-07-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/basic-style-07-tablet.webp">
+              <img class="position-card__img" src="img/basic-style-07.png" alt="Базовый комплект современная классика">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Базовый комплект<br />"Современная классика"</h2>
+              <p class="position-card__description">Объемная композиция на&nbsp;высокой стойке, тонкие свечи и&nbsp;подсвечники 4&nbsp;шт., серая скатерть для круглого стола</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">7&nbsp;300&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/basic-style-08-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/basic-style-08-tablet.webp">
+              <img class="position-card__img" src="img/basic-style-08.png" alt="Базовый комплект лаконичный акцент">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Базовый комплект<br />"Лаконичный акцент"</h2>
+              <p class="position-card__description">Композиция из&nbsp;стеклянных колб с&nbsp;розами, тонкие свечи и&nbsp;подсвечники 8&nbsp;шт., серая скатерть для круглого стола</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">3&nbsp;900&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/basic-style-09-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/basic-style-09-tablet.webp">
+              <img class="position-card__img" src="img/basic-style-09.png" alt="Базовый комплект воздушная нежность">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Базовый комплект<br />"Воздушная нежность"</h2>
+              <p class="position-card__description">Композиция на&nbsp;зеркальной подложке в&nbsp;мини вазах, тонкие свечи и&nbsp;подсвечники 4&nbsp;шт., пудровая скатерть для круглого стола</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">4&nbsp;500&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/single-style-01-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/single-style-01-tablet.webp">
+              <img class="position-card__img" src="img/single-style-01.png" alt="Комплект сервировки на одну персону нежность в деталях">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Комплект сервировки на одну персону<br />"Нежность в деталях"</h2>
+              <p class="position-card__description">Бокал, тарелка, тарелка сервировочная, приборы, салфетка</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">796&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/single-style-02-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/single-style-02-tablet.webp">
+              <img class="position-card__img" src="img/single-style-02.png" alt="Комплект сервировки на одну персону роскошь красок">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Комплект сервировки на одну персону<br />"Роскошь красок"</h2>
+              <p class="position-card__description">Бокал, тарелка, тарелка сервировочная, приборы, салфетка</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">865&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/single-style-03-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/single-style-03-tablet.webp">
+              <img class="position-card__img" src="img/single-style-03.png" alt="Комплект сервировки на одну персону лиловая классика">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Комплект сервировки на одну персону<br />"Лиловая классика"</h2>
+              <p class="position-card__description">Бокал, тарелка, тарелка сервировочная, приборы, салфетка</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">600&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/single-style-04-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/single-style-04-tablet.webp">
+              <img class="position-card__img" src="img/single-style-04.png" alt="Комплект сервировки на одну персону свадебная вечеринка">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Комплект сервировки на одну персону<br />"Свадебная вечеринка"</h2>
+              <p class="position-card__description">Бокал, тарелка, тарелка сервировочная, приборы, салфетка</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">625&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/single-style-05-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/single-style-05-tablet.webp">
+              <img class="position-card__img" src="img/single-style-05.png" alt="Комплект сервировки на одну персону припыленный монохром">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Комплект сервировки на одну персону<br />"Припыленный монохром"</h2>
+              <p class="position-card__description">Бокал, тарелка, тарелка сервировочная, приборы, салфетка</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">390&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/single-style-06-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/single-style-06-tablet.webp">
+              <img class="position-card__img" src="img/single-style-06.png" alt="Комплект сервировки на одну персону моно из роз">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Комплект сервировки на одну персону<br />"Моно из роз"</h2>
+              <p class="position-card__description">Бокал, тарелка, тарелка сервировочная, приборы, салфетка</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">815&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/single-style-07-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/single-style-07-tablet.webp">
+              <img class="position-card__img" src="img/single-style-07.png" alt="Комплект сервировки на одну персону современная классика">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Комплект сервировки на одну персону<br />"Современная классика"</h2>
+              <p class="position-card__description">Бокал, тарелка, тарелка сервировочная, приборы, салфетка</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">815&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/single-style-08-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/single-style-08-tablet.webp">
+              <img class="position-card__img" src="img/single-style-08.png" alt="Комплект сервировки на одну персону лаконичный акцент">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Комплект сервировки на одну персону<br />"Лаконичный акцент"</h2>
+              <p class="position-card__description">Бокал, тарелка, тарелка сервировочная, приборы, салфетка</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">796&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/single-style-09-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/single-style-09-tablet.webp">
+              <img class="position-card__img" src="img/single-style-09.png" alt="Комплект сервировки на одну персону воздушная нежность">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Комплект сервировки на одну персону<br />"Воздушная нежность"</h2>
+              <p class="position-card__description">Бокал, тарелка, тарелка сервировочная, приборы, салфетка</p>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">755&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/glass-01-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/glass-01-tablet.webp">
+              <img class="position-card__img" src="img/glass-01.png" alt="Бокал">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Бокал</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">70&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/glass-02-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/glass-02-tablet.webp">
+              <img class="position-card__img" src="img/glass-02.png" alt="Бокал">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Бокал</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">130&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/plate-01-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/plate-01-tablet.webp">
+              <img class="position-card__img" src="img/plate-01.png" alt="Тарелка">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Тарелка</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">150&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/plate-02-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/plate-02-tablet.webp">
+              <img class="position-card__img" src="img/plate-02.png" alt="Тарелка">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Тарелка</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">160&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/plate-03-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/plate-03-tablet.webp">
+              <img class="position-card__img" src="img/plate-03.png" alt="Тарелка">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Тарелка</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">110&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/serving-plate-01-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/serving-plate-01-tablet.webp">
+              <img class="position-card__img" src="img/serving-plate-01.png" alt="Тарелка сервировочная">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Тарелка сервировочная</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">260&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/serving-plate-02-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/serving-plate-02-tablet.webp">
+              <img class="position-card__img" src="img/serving-plate-02.png" alt="Тарелка сервировочная">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Тарелка сервировочная</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">260&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/serving-plate-03-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/serving-plate-03-tablet.webp">
+              <img class="position-card__img" src="img/serving-plate-03.png" alt="Тарелка сервировочная">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Тарелка сервировочная</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">260&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/serving-plate-04-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/serving-plate-04-tablet.webp">
+              <img class="position-card__img" src="img/serving-plate-04.png" alt="Тарелка сервировочная">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Тарелка сервировочная</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">130&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/serving-plate-05-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/serving-plate-05-tablet.webp">
+              <img class="position-card__img" src="img/serving-plate-05.png" alt="Тарелка сервировочная">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Тарелка сервировочная</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">130&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/serving-plate-06-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/serving-plate-06-tablet.webp">
+              <img class="position-card__img" src="img/serving-plate-06.png" alt="Тарелка сервировочная">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Тарелка сервировочная</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">210&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/silverware-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/silverware-tablet.webp">
+              <img class="position-card__img" src="img/silverware.png" alt="Приборы">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Приборы</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">235&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/tissue-01-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/tissue-01-tablet.webp">
+              <img class="position-card__img" src="img/tissue-01.png" alt="Салфетка">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Салфетка</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">80&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/tissue-02-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/tissue-02-tablet.webp">
+              <img class="position-card__img" src="img/tissue-02.png" alt="Салфетка">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Салфетка</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">80&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/tissue-03-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/tissue-03-tablet.webp">
+              <img class="position-card__img" src="img/tissue-03.png" alt="Салфетка">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Салфетка</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">80&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/tissue-04-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/tissue-04-tablet.webp">
+              <img class="position-card__img" src="img/tissue-04.png" alt="Салфетка">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Салфетка</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">80&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          <li class="positions__item position-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1400px)" srcset="img/candles-desktop.webp">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/candles-tablet.webp">
+              <img class="position-card__img" src="img/candles.png" alt="Свечи">
+            </picture>
+            <div class="position-card__content">
+              <h2 class="position-card__title">Свечи</h2>
+            </div>
+            <div class="position-card__details">
+              <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+              <p class="position-card__price">90&nbsp;₽</p>
+            </div>
+            <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+          </li>
+          
         </ul>
       </section>
     </div>

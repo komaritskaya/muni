@@ -7,8 +7,9 @@
   font-size: 1.875rem;
   line-height: 2.27rem;
   color: @grey-titles-color;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 51px;
+  padding-bottom: 23px;
+  padding-left: 11px;
   text-align: center;
   background-color: @white-color;
 }
@@ -18,23 +19,23 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 34px;
-  padding-bottom: 33px;
+  padding-top: 35px;
+  padding-bottom: 32px;
 }
 
 .contacts__item {
-  margin-left: 25%;
+  margin-left: 24%;
   font-family: @text-font;
   color: @grey-text-color;
   font-size: 0.75rem;
   line-height: 0.88rem;
   
   &--phone {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
   
   &--insta {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 }
 
@@ -53,6 +54,7 @@
     font-size: 3.125rem;
     line-height: 3.25rem;
     padding-top: 100px;
+    margin-left: -20px;
     padding-bottom: 84px;
     position: relative;
     
@@ -72,18 +74,46 @@
   }
   
   .contacts__list {
-    padding-top: 45px;
-    padding-bottom: 45   px;
+    padding-top: 44px;
+    padding-bottom: 45px;
   }  
   
   .contacts__item {
-    // margin-left: 25%;
-    // font-family: @text-font;
-    // color: @grey-text-color;
+    margin-left: 26%;
     font-family: @links-font;
     font-size: 1.25rem;
     line-height: 1.52rem;
-  }  
+    
+    &--phone {
+      margin-bottom: 25px;
+    }
+    
+    &--insta {
+      margin-bottom: 36px;
+    }
+  } 
+  
+  .contacts__link > span {
+    margin-left: 0;
+  }
+  
+  .contacts__image--phone {
+    width: 21px;
+    height: 21px;
+    margin-right: 20px;
+  }
+  
+  .contacts__image--insta {
+    width: 21px;
+    height: 21px;
+    margin-right: 20px;
+  }
+  
+  .contacts__image--email {
+    width: 28px;
+    height: 20px;
+    margin-right: 4px;
+  }
   
   // .contacts__wrapper {
   //   .wrapper();

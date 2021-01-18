@@ -4,12 +4,22 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4px;
+  padding-top: 12px;
   padding-bottom: 20px;
 }
 
 .page-footer__nav {
   display: none;
+}
+
+.page-footer__logo {
+  margin-left: -5px;
+}
+
+.page-footer__logo-image {
+  margin-top: -14px;
+  width: 42px;
+  height: 42px;
 }
 
 .page-footer__contacts {
@@ -29,9 +39,47 @@
   font-family: @links-font; 
   color: @grey-text-color;
   font-size: 0.75rem;
-  line-height: 0.91rem;
+  line-height: 1.2rem;
 }
 
 .page-footer__insta {
   margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    padding-top: 0;
+    padding-bottom: 33px;
+    align-items: flex-end;
+  }
+  
+  .page-footer__logo-image {
+    margin-top: 0;
+    width: 58px;
+    height: 58px;
+    margin-left: -2px;
+  }
+  
+  .page-footer__phone,
+  .page-footer__email {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .page-footer__contacts-first {
+    margin-bottom: 14px;
+  }
+  
+  .page-footer__image--insta {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .page-footer__copyright {
+    font-family: @links-font;
+    font-size: 0.875rem;
+    line-height: 0.94rem;
+  }
 }

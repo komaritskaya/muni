@@ -1,0 +1,45 @@
+.catalog__title {
+  .wrapper();
+  text-align: center;
+  font-family: @titles-font;
+  color: @grey-titles-color;
+  font-size: 1.875rem;
+  line-height: 2.27rem;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.catalog__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.catalog__option {
+  font-family: @links-font;
+  font-size: 0.75rem;
+  line-height: 0.91rem;
+  padding: 13px;
+  width: 50%;
+  text-align: center;
+  color: @light-text-color;
+  background-color: @bg-grey-color;
+  
+  &--active {
+    color: @grey-text-color;
+    border: @secondary-border;
+    background-color: @bg-darker-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__wrapper {
+    .wrapper();
+  }
+  
+  .catalog__title {
+    font-size: 3.125rem;
+    line-height: 3.25rem;
+  }
+}

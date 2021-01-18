@@ -1,5 +1,5 @@
 .btn {
-  padding: 19px;
+  padding: 18px;
   font-family: @text-font;
   color: @white-color;
   display: block;
@@ -8,6 +8,10 @@
   
   &--primary {
     background-color: @decorations-bg-color;
+  }
+  
+  &--secondary {
+    background-color: @secondary-color;
   }
   
   &--reverse {
@@ -20,9 +24,19 @@
 
 @media (min-width: @tablet-width) {
   .btn {
+    max-width: 305px;
+    padding: 21px;
+
     &--primary {
       font-size: 1.25rem;
       line-height: 1.465rem;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .btn {
+    max-width: 377px;
+    padding: 26px;
   }
 }

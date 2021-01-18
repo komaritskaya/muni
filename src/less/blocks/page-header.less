@@ -14,6 +14,11 @@
   height: 42px;
 }
 
+.page-header__logo-image {
+  width: 42px;
+  height: 42px;
+}
+
 .page-header__contacts {
   display: flex;
   flex-direction: row;
@@ -61,5 +66,39 @@
   &--opened {
     background-image: url("../img/icon-close.svg");
     background-size: 16px 16px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    padding-top: 0;
+    height: 58px;
+  }
+  
+  .page-header__logo {
+    margin-left: -7px;
+    height: 58px;
+  }
+  
+  .page-header__logo-image {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    height: 95px;
+  }
+  
+  .page-header__logo {
+    height: 87px;
+  }
+  
+  .page-header__logo-image {
+    width: 87px;
+    height: 87px;
+    margin-top: -4px;
+    margin-left: -7px;
   }
 }

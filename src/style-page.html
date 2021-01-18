@@ -63,25 +63,133 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">Главная</li>
         <li class="breadcrumbs__item">Каталог</li>
+        <li class="breadcrumbs__item">Нежность в деталях</li>
       </ul>
       
-      <h1 class="catalog__title">Каталог</h1>
-      <div class="catalog__options">
-        <label for="styles">
-          <input type="radio" name="catalog-options" id="styles" class="catalog__options-item">
-        </label>
-        <label for="positions">
-          <input type="radio" name="catalog-options" id="positions" class="catalog__options-item">
-        </label>
-      </div>
+      <h1 class="catalog__title">Нежность в деталях</h1>
       
-      <section class="catalog__styles styles">
-        <ul class="styles__list">
-          <li class="styles__item style-card">
-            <img src="#" alt="Нежность в деталях" class="style-card__img">
-            <h2 class="style-card__title">Нежность в деталях</h2>
-          </li>
-        </ul>
+      <section class="style-sets">
+        <div class="style-sets__item style-set">
+          <div class="style-set__content">
+            <h2 class="style-set__title">Базовый комплект</h2>
+            <ul class="style-set__features">
+              <li>Цветочная композиция в&nbsp;вазе</li>
+              <li>Тонкие свечи и&nbsp;подсвечники 4&nbsp;шт.</li>
+              <li>Пудровая скатерть для круглого стола</li>
+            </ul>
+            <div class="style-set__details">
+              <p class="style-set__price">80&nbsp;₽</p>
+              <label class="style-set__persons" for="persons">количество персон<input id="persons" type="text"></label>
+            </div>
+            <a href="#" class="style-set__btn btn btn--secondary">Выбрать</a>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width:1400px)" srcset="img/style-page-01-basic-desktop.webp">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/style-page-01-basic-tablet.webp">
+            <img class="style-set__img" src="img/style-page-01-basic.png" alt="Базовый комплект нежность в деталях">
+          </picture>
+        </div>
+        <div class="style-sets__item style-set">
+          <div class="style-set__content">
+            <h2 class="style-set__title">Сервировка</h2>
+            <p class="style-set__subtitle">Полный набор на&nbsp;одну персону</p>
+            <ul class="style-set__features">
+              <li>Бокал</li>
+              <li>Тарелка</li>
+              <li>Тарелка сервировочная</li>
+              <li>Салфетка</li>
+              <li>Приборы</li>
+            </ul>
+            <div class="style-set__details">
+              <p class="style-set__price">80&nbsp;₽</p>
+              <label class="style-set__persons" for="persons">количество персон<input id="persons" type="text"></label>
+            </div>
+            <a href="#" class="style-set__btn btn btn--secondary">Выбрать</a>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width:1400px)" srcset="img/style-page-01-single-desktop.webp">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/style-page-01-single-tablet.webp">
+            <img class="style-set__img" src="img/style-page-01-single.png" alt="Комплект сервировки на одну персону нежность в деталях">
+          </picture>
+        </div>
+      </section>
+      
+      <section class="style-positions">
+        <li class="positions__item position-card">
+          <picture>
+            <source type="image/webp" media="(min-width:1400px)" srcset="img/style-page-01-glass-desktop.webp">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/style-page-01-glass-tablet.webp">
+            <img class="position-card__img" src="img/style-page-01-glass.png" alt="Бокал">
+          </picture>
+          <div class="position-card__content">
+            <h2 class="position-card__title">Бокал</h2>
+          </div>
+          <div class="position-card__details">
+            <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+            <p class="position-card__price">70&nbsp;₽</p>
+          </div>
+          <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+        </li>
+        <li class="positions__item position-card">
+          <picture>
+            <source type="image/webp" media="(min-width:1400px)" srcset="img/style-page-01-plate-desktop.webp">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/style-page-01-plate-tablet.webp">
+            <img class="position-card__img" src="img/style-page-01-plate.png" alt="Тарелка">
+          </picture>
+          <div class="position-card__content">
+            <h2 class="position-card__title">Тарелка</h2>
+          </div>
+          <div class="position-card__details">
+            <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+            <p class="position-card__price">150&nbsp;₽</p>
+          </div>
+          <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+        </li>
+        <li class="positions__item position-card">
+          <picture>
+            <source type="image/webp" media="(min-width:1400px)" srcset="img/style-page-01-serving-plate-desktop.webp">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/style-page-01-serving-plate-tablet.webp">
+            <img class="position-card__img" src="img/style-page-01-serving-plate.png" alt="Тарелка сервировочная">
+          </picture>
+          <div class="position-card__content">
+            <h2 class="position-card__title">Тарелка сервировочная</h2>
+          </div>
+          <div class="position-card__details">
+            <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+            <p class="position-card__price">260&nbsp;₽</p>
+          </div>
+          <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+        </li>
+        <li class="positions__item position-card">
+          <picture>
+            <source type="image/webp" media="(min-width:1400px)" srcset="img/style-page-01-silverware-desktop.webp">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/style-page-01-silverware-tablet.webp">
+            <img class="position-card__img" src="img/style-page-01-silverware.png" alt="Приборы">
+          </picture>
+          <div class="position-card__content">
+            <h2 class="position-card__title">Приборы</h2>
+          </div>
+          <div class="position-card__details">
+            <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+            <p class="position-card__price">235&nbsp;₽</p>
+          </div>
+          <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+        </li>
+        <li class="positions__item position-card">
+          <picture>
+            <source type="image/webp" media="(min-width:1400px)" srcset="img/style-page-01-tissue-desktop.webp">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/style-page-01-tissue-tablet.webp">
+            <img class="position-card__img" src="img/style-page-01-tissue.png" alt="Салфетка">
+          </picture>
+          <div class="position-card__content">
+            <h2 class="position-card__title">Салфетка</h2>
+          </div>
+          <div class="position-card__details">
+            <label class="position-card__persons" for="persons">количество персон<input id="persons" type="text"></label>
+            <p class="position-card__price">80&nbsp;₽</p>
+          </div>
+          <a href="#" class="position-card__btn btn btn--secondary">Выбрать</a>
+        </li>
       </section>
     </div>
     

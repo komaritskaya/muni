@@ -14,7 +14,7 @@
   font-family: @titles-font;
   font-weight: normal;
   font-size: 2.5rem;
-  line-height: 2.5rem;
+  line-height: 2.3rem;
   margin: 0;
 }
 
@@ -23,7 +23,7 @@
   font-family: @links-font;
   font-size: 0.75rem;
   line-height: 0.94rem;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-bottom: 50px;
 }
 
@@ -31,6 +31,7 @@
   .promo {
     height: 555px;
     background-image: url('../img/promo-bg-tablet.png');
+    padding: 86px 68px 112px;
   }
   
   .promo__title {
@@ -41,8 +42,8 @@
   .promo__description {
     font-size: 1.25rem;
     line-height: 1.56rem;
-    margin-top: 31px;
-    margin-bottom: 92px;
+    margin-top: 30px;
+    margin-bottom: 74px;
   }
 }
 
@@ -61,6 +62,18 @@
     font-size: 1.875rem;
     line-height: 2.5rem;
     margin-top: 31px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    padding: 158px 6px 357px;
+  }
+  
+  .promo__description {
+    max-width: 725px;
+    margin-top: 48px;
     margin-bottom: 100px;
   }
 }
