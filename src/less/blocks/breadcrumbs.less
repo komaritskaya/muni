@@ -1,0 +1,38 @@
+.breadcrumbs {
+  .wrapper;
+  display: none;
+  width: 100%;
+}
+
+@media(min-width: @tablet-width) {
+  .breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0 0;
+    font-family: @links-font;
+    font-size: 0.875rem;
+    line-height: 143%;
+    color: @grey-titles-color;
+
+    &__item {
+      display: inline-flex;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+
+      &:not(:last-of-type)::after {
+        content: '/';
+        display: inline;
+        margin: 0 4px 0 7px;
+      }
+    }
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .breadcrumbs {
+    font-size: 1.125rem;
+    line-height: 139%;
+  }
+}
