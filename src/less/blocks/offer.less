@@ -1,0 +1,390 @@
+.offer {
+  .wrapper;
+  margin-bottom: 39px;
+
+  &__breadcrumbs {
+    display: none;
+  }
+
+  &__title {
+    margin: 35px 0 52px;
+  }
+
+  &-form {
+    width: 100%;
+
+    &__subhead {
+      margin: 20px 0;
+      font-family: @links-font;
+      font-weight: 600;
+      font-size: 0.75rem;
+      line-height: 15px;
+      color: @grey-titles-color;
+
+      &:first-of-type {
+        margin: 0 0 20px;
+      }
+    }
+
+    &__input {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      height: 31px;
+      margin: 0 0 10px;
+      padding: 7px 9px 8px;
+      border: 1px solid @grey-titles-color;
+      font-family: @links-font;
+      font-size: 0.75rem;
+      line-height: 167%;
+      color: @grey-titles-color;
+      .text-overflow;
+      transition: color 0.35s ease-in;
+
+      &::placeholder {
+        color: @placeholder-text-color;
+        transition: color 0.25s ease-in;
+      }
+
+      &:focus {
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+
+    &-date-input {
+      display: flex;
+      flex-direction: row;
+      width: 185px;
+      height: 31px;
+      margin: 0 0 10px;
+      padding: 5px 0 6px 9px;
+      border: 1px solid @grey-titles-color;
+      font-family: @links-font;
+      font-size: 0.75rem;
+      line-height: 167%;
+      color: @grey-titles-color;
+
+      &__label {
+        margin: 0 10px 0 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: @placeholder-text-color;
+      }
+
+      &__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 18px;
+        margin-right: 12px;
+        border-color: #c4c4c4;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        text-align: center;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: 167%;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__submit-btn {
+      width: 100%;
+      max-width: 100%;
+      margin: 20px 0 0;
+      padding: 17px 0;
+      border: none;
+      font-family: @links-font;
+      font-size: 0.75rem;
+      line-height: 167%;
+    }
+  }
+
+  &-summ {
+    display: none;
+  }
+}
+
+@media(min-width: @tablet-width) {
+  .offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 26px;
+
+    &__breadcrumbs {
+      display: block;
+    }
+
+    &__title {
+      margin: 31px 0 50px;
+    }
+
+    &-form {
+      width: @cols-7-12;
+
+      &__subhead {
+        font-size: 0.875rem;
+        line-height: 143%;
+      }
+
+      &__input {
+        height: 36px;
+        margin: 0 0 20px;
+        padding: 9px 10px 9px;
+        font-size: 0.875rem;
+        line-height: 143%;
+      }
+
+      &-date-input {
+        width: 210px;
+        height: 36px;
+        margin: 0 0 20px;
+        padding: 9px;
+        font-size: 0.875rem;
+        line-height: 143%;
+
+        &__label {
+          margin: 0 14px 0 0;
+        }
+
+        &__input {
+          width: 38px;
+          height: 18px;
+          margin: 0 12px 0 0;
+        }
+      }
+
+      &__submit-btn {
+        margin: 50px 0 0;
+        padding: 10px 0;
+        font-size: 0.875rem;
+        line-height: 1rem;
+      }
+    }
+
+    &-summ {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      align-self: flex-start;
+      box-sizing: border-box;
+      width: @cols-5-12;
+      min-height: 228px;
+      padding: 12px 12px 18px;
+      border-color: @bg-main-color;
+      border-style: solid;
+      border-width: 22px 24px;
+      font-family: @links-font;
+      color: @grey-titles-color;
+
+      &__title {
+        margin: 0 0 20px;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 143%;
+      }
+
+      &__offer-list {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin: 0 0 20px;
+        font-family: inherit;
+        font-size: 0.875rem;
+        line-height: 143%;
+
+        &__title {
+          width: 60%;
+          max-width: 60%;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+
+        &__qty {
+          min-width: 15%;
+          width: 15%;
+          max-width: 15%;
+          padding-right: 20px;
+          text-align: right;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+
+        &__price {
+          min-width: 25%;
+          width: 25%;
+          max-width: 25%;
+          text-align: right;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+      }
+
+      &-total {
+        font-family: inherit;
+        font-size: 0.875rem;
+        line-height: 143%;
+
+        &__text {
+          margin-right: 16px;
+          font-weight: 600;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+
+        &__value {
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .offer {
+    margin-bottom: 100px;
+
+    &__breadcrumbs {
+      display: block;
+    }
+
+    &__title {
+      margin: 14px 0 77px;
+    }
+
+    &-form {
+      width: @cols-5-12;
+
+      &__subhead {
+        margin: 50px 0;
+        font-size: 1.875rem;
+        line-height: 123%;
+
+        &:first-of-type {
+          margin: 0 0 50px;
+        }
+      }
+
+      &__input {
+        height: 57px;
+        margin: 0 0 30px;
+        padding: 18px 13px 19px;
+        font-size: 1rem;
+        line-height: 125%;
+      }
+
+      &-date-input {
+        min-width: 215px;
+        width: max-content;
+        height: 57px;
+        margin: 0 0 50px;
+        padding: 18px 13px 19px;
+        font-size: 1rem;
+        line-height: 125%;
+
+        &__label {
+          font-size: 1rem;
+          line-height: 125%;
+        }
+
+        &__input {
+          width: 45px;
+          height: 20px;
+          margin: 0 12px 0 0;
+          font-size: 1rem;
+          line-height: 125%;
+        }
+      }
+
+      &__submit-btn {
+        margin: 50px 0 0;
+        padding: 17px 0;
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+
+    &-summ {
+      width: @cols-6-12;
+      min-height: 510px;
+      padding: 96px 69px;
+      border-width: 58px 50px;
+
+      &__title {
+        margin: 0 0 20px;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 1.875rem;
+        line-height: 123%;
+      }
+
+      &-item {
+        margin: 0 0 37px;
+        font-size: 1.125rem;
+        line-height: 139%;
+
+        &__title {
+          width: 60%;
+          max-width: 60%;
+        }
+
+        &__qty {
+          min-width: 15%;
+          width: 15%;
+          max-width: 15%;
+          padding-right: 20px;
+        }
+
+        &__price {
+          min-width: 25%;
+          width: 25%;
+          max-width: 25%;
+          text-align: right;
+        }
+      }
+
+      &-total {
+        font-family: inherit;
+        font-size: 1.875rem;
+        line-height: 123%;
+
+        &__text {
+          margin-right: 72px;
+        }
+
+        &__value {
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+
+        }
+      }
+    }
+  }
+
+}
