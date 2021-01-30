@@ -69,7 +69,6 @@ ready(() => {
       // открытие popup
       open(someHTML) {
         if (someHTML) {
-          console.log(this.popUp);
           this.popUp
             .querySelector('.popup-inner')
             .innerHTML = someHTML;
@@ -81,7 +80,6 @@ ready(() => {
 
       // закрытие popup
       close() {
-        console.log(this.popUp);
         this.popUp.style.display = 'none';
         this.isActive = false;
       },
